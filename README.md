@@ -1,75 +1,64 @@
-# meta-ad-performance-dashboard
+📊 Meta Ads Performance Analytics | Power BI
 
-📌 Project Overview
-This project analyzes paid advertising performance across Meta platforms (Facebook & Instagram). The dashboard helps the marketing team track campaign reach, user engagement, conversions, and budget utilization to improve audience targeting and maximize the return on ad spend.
+🚀 Objective
 
-🎯 Business Goal
+To evaluate and optimize paid advertising performance on Meta platforms (Facebook & Instagram) using data-driven insights on user engagement, conversion funnels, and campaign efficiency.
 
-✔ Identify top-performing platforms and ad types
-✔ Understand user demographics and engagement behavior
-✔ Optimize campaign budget allocation
-✔ Improve click-through and conversion performance
+📌 Key Outcomes
 
-🧩 Data Source & Modeling
+Analyzed 10K+ impressions, 1.2K clicks, and 1.4K engagements
+Achieved 11.5% CTR, 13.5% engagement rate, 5.98% conversion rate
+Compared performance across platforms, audiences, locations, and ad types
+Identified the most effective age groups (25–34) and campaigns for budget optimization
 
-The dataset contains four relational tables, modeled in a Star Schema:
+🧠 Solution Approach
 
-Table	Description
-
-ad_events	Fact table containing impressions, clicks, purchases
-ads	Ad details – type, platform, targeting
-campaigns	Budget & strategy details
-users	Demographics & interests
-
-🔗 Relationships:
-
-ad_events → ads → campaigns
-ad_events → users
-
-📌 Data transformations:
-
-Data type corrections
-Created Calendar Table for time intelligence
-Built DAX measures & dynamic parameters
-
-📈 Key Metrics & Calculations
-
-Impressions: 10.3K+
-Clicks: 1.2K
-Engagements: 1.4K
-CTR: 11.54%
-Engagement Rate: 13.53%
-Conversion Rate: 5.98%
-Total Budget: $2.5M
-Avg Budget / Campaign: $50.7K
-➡ Measures created using DAX (CTR, Engagement Rate, Purchase Rate, Conversion Rate)
+Phase	Work Done
+Requirements Understanding	Reviewed business KPIs and dashboard goals
+Data Preparation	Cleaned and modeled ad performance tables
+Data Modeling	Created Star Schema with 4 tables & Calendar table
+DAX Calculations	Created funnel metrics & dynamic KPI selection parameter
+Visualization	Designed interactive multi-view dashboard
+Insights & Storytelling	Delivered actionable marketing recommendations
 
 📊 Dashboard Features
 
-✔ KPI summary cards
-✔ Dynamic metric selection
-✔ Platform & campaign filters
-✔ Audience insights (gender, age, country)
-✔ Weekly & hourly performance trends
-✔ Creative-type comparison via matrix
-✔ Calendar heatmap for monthly engagement
+✅ KPI Overview (Reach, Engagement, Conversions)
+✅ Funnel performance: Impression → Click → Purchase
+✅ Gender-wise & Age-wise audience analysis
+✅ Geographic reach analysis using map visualization
+✅ Weekly + Hourly trend behavior
+✅ Ad Type and Platform Comparison
+✅ Campaign & Target Interest Filters
 
-🔍 Insights & Business Impact
+🧩 Data Model (Star Schema)
+Table	Role
+ad_events (Fact)	Logs impressions, clicks, purchases
+ads	Platform, targeting & creative metadata
+campaigns	Budget allocation + timelines
+users	Demographics, country & interests
+Calendar Table	Time intelligence
 
-✅ Age group 25–34 drives highest engagement
-✅ 13.5% engagement rate — strong user interaction
-✅ 5.9% conversion shows purchase funnel is effective
-✅ Country-wise performance highlights expansion opportunities
-✅ Certain ad types outperform others → budget shift recommended
+🔎 Major Insights
 
-🛠 Tools & Skills Used
+📍 Highest engagement from 25–34 age group
+📍 Funnel efficiency shows strong conversion performance
+📍 Some ad formats outperform others → allocate budget accordingly
+📍 Hourly trend indicates peak user activity windows
+📍 Geo-dashboard supports region-specific targeting
 
-Power BI
-DAX & Data Modeling
-Data Visualization
-Marketing & Funnel Analytics
-Business Requirement Alignment
+🛠 Tools & Techniques
 
-✅ Conclusion
+Power BI Desktop
+DAX Measures
+Data Modeling & Relationships
+Conditional formatting
+Filter Pane customization
+Business Analytics for Marketing
 
-This dashboard enables data-driven decisions by identifying the most impactful campaigns, audience groups, and ad formats — helping marketers improve ROI through smarter budget allocation and targeted optimization.
+✅ Business Impact
+
+This report empowers marketing teams to:
+✔ Boost conversions by targeting high-performing audience segments
+✔ Optimize ad spend by prioritizing impactful campaigns
+✔ Improve strategy with performance-based creative testing
